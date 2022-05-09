@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="log-in-script.js" defer></script>
+  <link rel="stylesheet" href="styles.css"></style>
+</head>
+<body>
+  <nav>
+    <img onClick="homeClick()" id="logo" src="images/FEM-FIT.png">
+    <p id="user-nav">Welcome user@mail.com</p>
+    <ul id="nav">
+      <li><a href='/'>Home</a></li>
+      <li><a href='/gallery.html'>Gallery</a></li>
+      <li id="sign-up-nav"><a href='/sign-up.html'>Sign Up</a></li>
+      <li id="log-in-nav">Log In</li>
+      <li id="sign-out-nav">Sign Out</li>
+    </ul>
+  </nav>
+  <img id="down" src="images/down-arrow.png">
+  <main>
+    <div class="index-block">
+      <div id="benefits">
+        <h3>Our gym holds many benefits!</h3>
+        <ul>
+          <li>Cool Machinery</li>
+          <li>Sauna</li>
+          <li>Luxury Locker Rooms</li>
+          <li>Judgement Free and Female Orientated!</li>
+        </ul>
+      </div>
+      <img src="images/gym_image_1.jpeg">
+    </div>
+    <div class="index-block">
+      <img src="images/gym_image_2.jpeg">
+      <div id="sign-up-box">
+        <h3>Sign Up for our gym today!</h3>
+        <button onClick="signUpClick()" id="sign-up-button">Sign Up!</button>
+      </div>
+    </div>
+  </main>
+  <div id="overlay"></div>
+  <div id="log-in">
+    <form id="log-in-form">
+      <p>Log In!</p>
+      <p id="display-text-log-in"></p>
+      Email: <input name="credentials[email]" type="email" placeholder="Email">
+      <br>
+      Password: <input name="credentials[password]" type="password" placeholder="Password">
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- <a href="sign-up.html">Sign Up</a> -->
+</body>
+</html>

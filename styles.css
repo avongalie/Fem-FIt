@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+body{
+  background-attachment: fixed;
+  background-image: url('images/Fem-Fit_background_pink.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Marcellus', serif;
+  /* background-size: 100vw 100vh; */
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  /* border: 1px solid black; */
+  width: 100vw;
+  background-color: #ffc6c3;
+}
+
+#nav{
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+#nav > li{
+  padding-left: 40px;
+}
+#nav > li:hover {
+  color: white;
+}
+
+#nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+#nav > li > a:hover {
+  color: white;
+}
+
+main {
+  /* margin-top: 100vh; */
+  font-size: 13pt;
+}
+
+
+#logo {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+#user-nav{
+  position: absolute;
+  margin-left: 60px;
+}
+
+.index-block{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+  height: 400px;
+  margin-left: -0.6vw; 
+  margin-bottom: 100px;
+  /* has to be a better way to fix margin issue */
+}
+
+#sign-up{
+  padding-top: 20px;
+  text-align: center;
+  background-color: white;
+  width: 70vw;
+  height: 400px;
+  margin: 0 auto; 
+  margin-top: 20vh;
+  font-size: 15pt;
+}
+
+#sign-up-form > input{
+  font-size: 13pt;
+}
+
+/* gotta fix this log in */
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  background-color: black;
+}
+
+#log-in{
+  position: fixed;
+  width: 50vw;
+  padding: 20px;
+  z-index: 3;
+  top: 40vh; 
+  left: 25vw;
+  background-color: white;
+  display: none;
+  text-align: center;
+  font-size: 15pt;
+}
+#log-in-form > input{
+  font-size: 13pt;
+}
+
+#down {
+  display: block;
+  margin: 0 auto;
+  margin-top: 88vh;
+  width: 100px;
+}
+
+#sign-up-button{
+  font-size: 30pt;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #ffc6c3;
+  border: 3px solid salmon;
+}
+
+#sign-up-button:hover {
+  background-color: white;
+}
+
+#benefits {
+  padding-top: 100px;
+}
+
+#benefits > ul{
+  text-align: left;
+}
+#benefits > ul > li{
+  padding-bottom: 5px;
+}
+
+#sign-up-box{
+  padding-top: 50px;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+
+#gallery > img{
+  /* width: 45vw; */
+  width: 500px;
+}
+
+#gallery-title{
+  margin-top: 60px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px){
+  .index-block{
+    flex-direction: column;
+  }
+  /* #down {
+    margin-top: 100vh;
+  } */
+  .index-block{
+    height: 80vh;
+  }
+  #benefits {
+    padding-top: 0;
+  }
+  #sign-up-box {
+    padding-top: 0;
+  }
+}
