@@ -32,7 +32,23 @@ nav {
   color: white;
   cursor: pointer;
 }
+table{
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-color: salmon;
+  padding: 5px;
+  float: right;
+}
+td{
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+}
 
+#hours{
+  margin-top: 150px;
+}
 
 main {
   /* margin-top: 100vh; */
@@ -64,6 +80,8 @@ main {
   margin-bottom: 100px;
   /* has to be a better way to fix margin issue */
 }
+
+
 
 #sign-up{
   padding-top: 20px;
@@ -159,6 +177,14 @@ main {
 #gallery-title{
   margin-top: 60px;
   text-align: center;
+}
+
+#for-scroll{
+  position: absolute;
+  top: 93vh;
+  width: 100vw;
+  height: 5px;
+  /* background-color: white; */
 }
 
 @media only screen and (max-width: 980px){
