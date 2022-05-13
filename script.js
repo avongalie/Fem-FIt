@@ -77,3 +77,7 @@ function signUpClick(){
 function homeClick(){
   document.location.href = 'index.html';
 }
+
+function galleryClick(){
+  document.location.href = 'gallery.html';
+}

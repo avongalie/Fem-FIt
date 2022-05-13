@@ -1,29 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="images/FEM-FIT.png">
+  <title>Fem-Fit</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js" defer></script>
   <script src="script.js" defer></script>
   <script src="log-in-script.js" defer></script>
-  <link rel="stylesheet" href="styles.css"></style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
-    <img onClick="homeClick()" id="logo" src="images/FEM-FIT.png">
+    <img onClick="homeClick()" id="logo" src="images/FEM-FIT.png" alt="Fem Fit Logo">
     <p id="user-nav">Welcome user@mail.com</p>
     <ul id="nav">
-      <li><a href='/'>Home</a></li>
-      <li><a href='/gallery.html'>Gallery</a></li>
-      <li id="sign-up-nav"><a href='/sign-up.html'>Sign Up</a></li>
+      <li onClick="homeClick()">Home</li>
+      <li onClick="galleryClick()">Gallery</li>
+      <li onClick="signUpClick()" id="sign-up-nav">Sign Up</li>
       <li id="log-in-nav">Log In</li>
       <li id="sign-out-nav">Sign Out</li>
     </ul>
   </nav>
-  <img id="down" src="images/down-arrow.png">
+  <a href='#for-scroll'><img id="down" src="images/down-arrow.png" alt="down arrow"></a>
+  <div id="for-scroll"></div>
   <main>
     <div class="index-block">
       <div id="benefits">
@@ -35,13 +38,47 @@
           <li>Judgement Free and Female Orientated!</li>
         </ul>
       </div>
-      <img src="images/gym_image_1.jpeg">
+      <img src="images/gym_image_1.jpeg" alt="gym Image">
     </div>
     <div class="index-block">
-      <img src="images/gym_image_2.jpeg">
+      <img src="images/gym_image_2.jpeg" alt="person exercising">
       <div id="sign-up-box">
         <h3>Sign Up for our gym today!</h3>
         <button onClick="signUpClick()" id="sign-up-button">Sign Up!</button>
+      </div>
+    </div>
+    <div class="index-block">
+      <h1 id="hours">Hours</h1>
+      <div>
+        <table>
+          <tr>
+            <td>MONDAY</td>
+            <td>5AM-11PM</td>
+          </tr>
+          <tr>
+            <td>TUES</td>
+            <td>5AM-11PM</td>
+          </tr>
+          <tr>
+            <td>WED</td>
+            <td>5AM-11PM</td>
+          </tr>
+          <tr>
+            <td>THUR</td>
+            <td>5AM-11PM</td>
+          </tr>
+          <tr>
+            <td>FRI</td>
+            <td>5AM-11PM</td>
+          </tr>
+          <tr>
+            <td>SAT/SUN</td>
+            <td>7AM-7PM</td>
+          </tr>
+          <tr>
+            <td colspan="2">Tel: (917)809-****</td>
+          </tr>
+        </table>
       </div>
     </div>
   </main>

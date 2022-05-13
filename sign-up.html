@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="images/FEM-FIT.png">
+  <title>Fem-Fit</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js" defer></script>
   <script src="script.js" defer></script>
   <script src="sign-up-script.js" defer></script>
   <script src="log-in-script.js" defer></script>
-  <link rel="stylesheet" href="styles.css"></style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
-    <img onClick="homeClick()" id='logo' src="images/FEM-FIT.png">
+    <img onClick="homeClick()" id='logo' src="images/FEM-FIT.png" alt="Fem Fit Logo">
     <p id="user-nav">Welcome user@mail.com</p>
     <ul id="nav">
-      <li><a href='/'>Home</a></li>
-      <li><a href='/gallery.html'>Gallery</a></li>
-      <li id="sign-up-nav"><a href='/sign-up.html'>Sign Up</a></li>
+      <li onClick="homeClick()">Home</li>
+      <li onClick="galleryClick()">Gallery</li>
+      <li onClick="signUpClick()" id="sign-up-nav">Sign Up</li>
       <li id="log-in-nav">Log In</li>
       <li id="sign-out-nav">Sign Out</li>
     </ul>
@@ -28,11 +29,11 @@
   <main>
     <div id="sign-up">
       <form id="sign-up-form">
-        <p>Personal Info</p>
+        <p>Join Our Gym Today!</p>
         <p id="display-text"></p>
-        First Name: <input name="credentials[first_name]" type="first_name" placeholder="First Name">
+        First Name: <input name="credentials[first_name]" type="text" placeholder="First Name">
         <br>
-        Last Name: <input name="credentials[last_name]" type="last_name" placeholder="Last Name">
+        Last Name: <input name="credentials[last_name]" type="text" placeholder="Last Name">
         <br>
         Phone: <input type="tel" name="credentials[phone]" placeholder="888-888-8888">
         <br>
